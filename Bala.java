@@ -1,6 +1,9 @@
 import java.util.LinkedList;
 import java.util.ArrayList;
 import java.util.Random;
+/*The*/
+
+
 public class Bala extends Ant
 {   /*Bala constructor*/
     public Bala(int ID, int turn, Node[][] Grid)
@@ -59,6 +62,8 @@ public class Bala extends Ant
     }
   }
   /*update*/
+  /*When the bala ant updates it determines action by first seeing if a good boy ant is on its spot if it is the bala attacks, if not it checks adjacent locations, 
+  then if an good boy ant is next to a location the bala moves to that location, lastly if the two if statements have failed it moves around randomaly*/
    public void turn(Node[][] Grid, LinkedList<Ant> antList, LinkedList<Ant> balaList, int index)
  {
 
@@ -88,7 +93,7 @@ public void die(LinkedList<Ant> balaList, int index, Node[][] Grid)
   balaList.remove(index);
   Grid[this.getX()][this.getY()].setBala(Grid[this.getX()][this.getY()].getBala()-1);
   }
-/*check age*/
+/*check age*/ 
  public void checkAge(LinkedList<Ant> balaList, int index, Node[][] Grid)
  {
    if(getTurns() > getLifeSpan())
