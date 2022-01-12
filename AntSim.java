@@ -3,6 +3,20 @@ import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
 
+/*This program is the general holder for all of the ants by creating multiple ant objects and then looping through each ant
+starting with the bala and then going to the friendly ants.
+*/
+
+/*For programming this one important thing of consideration is checking whether to store the ant into the location as in a 
+double array object holder or simply placing the location in the ant object, while it would be possible for the ant to be stored in both the double array and
+ant list using pointers, however for this program for simplicity I chose to just an ant list, this sacrifices speed for simplicity, as when I need to find an ant next to another 
+I have to go through the entire list to find it.
+*/
+
+
+
+
+
 public class AntSim implements SimulationEventListener
 {
   /*Refence to timers*/
