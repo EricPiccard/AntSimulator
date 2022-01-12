@@ -6,7 +6,8 @@ import java.util.TimerTask;
 public class AntSim implements SimulationEventListener
 {
   /*Refence to timers*/
- Timer timer = new Timer();
+  /*Used to slow the program down*/
+Timer timer = new Timer();
 TimerTask task = new TimerTask()
 {
   public void run()
@@ -278,21 +279,3 @@ public void start()
              
      } 
 }
-     
-     
- 
-
-     
-   
-   
-
- 
-
-  
-
- 
- 
- /*Dont forget that thing*/
-
-
-
