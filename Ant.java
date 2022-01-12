@@ -2,6 +2,9 @@ import java.util.LinkedList;
 import java.util.Random;
 import java.util.ArrayList;
 
+
+/*A simple ant constructor that is extended to the rest of the ants for simplicity*/
+
 public class Ant 
 {
 /*Reference to how many turns an ant will live*/  
